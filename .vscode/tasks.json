@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Haskell exe",
+            "type": "shell",
+            "command": "stack exec sampleHaskell-exe",
+            "dependsOn": [
+                "stack build",
+              ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Haskell build",
+            "type": "shell",
+            "command": "stack build",
+            "problemMatcher": []
+        }
+    ]
+}
